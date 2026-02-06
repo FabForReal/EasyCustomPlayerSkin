@@ -68,6 +68,9 @@ namespace EasyPackageVariety
             {
                 if(!hasTexture) return;
                 
+                // the game uses point filtering for its textures
+                playerTexture.filterMode = FilterMode.Point;
+                
                 // ok this is kinda scuffed but who cares
                 
                 Transform head = __instance.transform.Find("head");
